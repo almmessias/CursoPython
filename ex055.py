@@ -1,7 +1,14 @@
 maior = 0
-#menor = 100
-for contagem in range (0, 5):
-    peso = float (input ('Qual seu peso: (Kg) '))
-    if peso > maior:
+menor = 0
+for contagem in range (1, 6):
+    peso = float (input ('Qual peso da {}ª pessoa: (Kg) '.format(contagem)))
+    if contagem == 1:
         maior = peso
-print (maior)
+        menor = peso
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+print ('O maior peso é {}'.format(maior))
+print ('O menor peso é {}'.format(menor))
