@@ -1,7 +1,7 @@
-sexo = ''
-while sexo != 'm' or sexo != 'f':
-    print ('''Qual seu sexo:
-    m - Masculino
-    f - Feminino''')
-    sexo = str(input ('Escolha uma opção: ')).lower()
-    print (sexo)
+print ('''Qual seu sexo:
+    M - Masculino
+    F - Feminino''')
+sexo = str(input ('Escolha uma opção: ')).upper().strip()[0]
+while sexo not in 'MF':
+    sexo = str (input ('Valor incorreto, informe seu sexo: M/F ')).upper().strip()[0]
+print ('Sexo {} registrado com sucesso'.format(sexo))
