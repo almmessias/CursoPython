@@ -1,9 +1,10 @@
-soma = 1
-resultado = 0
 n = int (input ('Digite um número e encontre seu fatorial: '))
-for fatorial in range(n, 0, -1):
-    soma = n * (n -1)
-    print (soma)
-    #print ('x{}'.format(fatorial), end='')
-#print ('\n', resultado)
-#print ('A soma do fatorial de {}! é {}'.format(n, soma))
+c = n
+f = 1
+print ('Fatorial de {}! ='.format(n), end='')
+while c > 0:
+    print ('{}'.format(c), end='')
+    print (' x ' if c > 1 else ' = ', end='')
+    f *= c
+    c -= 1
+print ('{}'.format(f), end='')
