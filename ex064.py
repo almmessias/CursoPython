@@ -1,11 +1,8 @@
-loop = 0
-num = 0
-soma = 0
-while loop != 999:
-    n = int (input ('Digite um número: '))
-    soma = soma + n
-    num = num + 1
-    if n == 999:
-        loop = 999
-print ('A soma entre os número é {}.'.format(soma-loop))
-print ('Você digitou {} números.'.format(num-1))
+cont = soma = num = 0
+num = int (input ('Digite um número: '))
+while num != 999:
+    soma += num
+    cont += 1
+    num = int (input ('Digite um número: '))
+print ('A soma entre os número é {}.'.format(soma))
+print ('Você digitou {} números.'.format(cont))
