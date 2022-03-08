@@ -7,6 +7,8 @@ while True:
     computador = randint(0, 10)
     num = int (input ('Digite um número: '))
     escolha = str(input('Escolha PAR ou IMPAR: P/I ')).upper().strip()[0]
+    while escolha not in 'PI':
+        escolha = str(input('Escolha PAR ou IMPAR: P/I ')).upper().strip()[0]
     soma = num + computador
     if soma % 2 == 0:
         result = 'P'

@@ -1,13 +1,11 @@
-a = 0
-b = 0
-c = 0
+a = b = c = 0
 while True:
     idade = int(input ('Digite sua idade: '))
-    sexo = str(input ('Digite seu sexo: M/F ')).upper().strip()[0]
-    if sexo not in 'MF':
+    sexo = ' '
+    while sexo not in 'MF':
         sexo = str(input ('Digite seu sexo: M/F ')).upper().strip()[0]
-    continua = str(input ('Você quer continuar? S/N ')).upper().strip()[0]
-    if continua not in 'SN':
+    continua = ' '
+    while continua not in 'SN':
         continua = str(input ('Você quer continuar? S/N ')).upper().strip()[0]
     if idade >= 18:
         a += 1
