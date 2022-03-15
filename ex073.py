@@ -1,6 +1,3 @@
-from __future__ import barry_as_FLUFL
-
-
 brasileiro = ('Atlético Mineiro','Flamengo','Palmeiras','Fortaleza','Corinthians','Red Bull Bragantino','Fluminense','America','Atlético-GO','Santos','Ceará','Internacional','São Paulo','Athletico Paranaense','Cuiabá','Juventude','Grêmio','Bahia','Sport','Chapecoense')
 print ('a) Os 5 primeiro colocados são:')
 for cont in range (0, 5):
@@ -13,4 +10,4 @@ print ('#' * 50)
 print (sorted(brasileiro))
 print ('#' * 50)
 if 'Chapecoense' in brasileiro:
-    print (len(brasileiro))
+    print (f'A Chapecoense está em {len(brasileiro)}ª posição')
