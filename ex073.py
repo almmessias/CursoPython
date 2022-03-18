@@ -11,3 +11,4 @@ print (sorted(brasileiro))
 print ('#' * 50)
 if 'Chapecoense' in brasileiro:
     print (f'A Chapecoense está em {len(brasileiro)}ª posição')
+#print (f'A Chapecoense está na {brasileiro.index("Chapecoense")+1}ª posição.')
