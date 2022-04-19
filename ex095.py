@@ -18,16 +18,23 @@ while True:
     if resp == 'N':
         break
 print ('-=' * 30)
-print (f'{"Cod":<2}{"Nome":^8}{"Gols":<5}{"Total":>3}')
-print ('-' * 30)
-for k, v in jogador.items():
-    print (f'{k}{v["Nome"]}{v["Gols"]}{v["Total"]}')
-'''print (jogador)
+print (f'{"cod":<3} ', end='')
+for j in jogador.keys():
+    print (f'{j:<5}' , end='    ')
+print ()
+print ('-' * 60)
+for k, j in enumerate(dados):
+    print (f' {k:<3}{j["nome"]:<8}{str(j["gols"]):<9}{j["total"]:>3}')
 print ('-=' * 30)
-for k, v in jogador.items():
-    print (f'O campo {k} tem o valor {v}')
-print ('-=' * 30)
-print (f'O jogador {jogador["nome"]} jogou {partidas} partidas.')
-for i, v in enumerate(gol):
-    print (f'   => Na partida {i+1}, fez {v} gols')
-print (f'Foi um total de {jogador["total"]} gols')'''
+while True:
+    jogado = int(input('Mostrar dados de qual jogador? 999 Interrompe '))
+    if jogado == 999:
+        break
+    elif jogado > len(dados) -1:
+        print ('Não existe esse código, tente novamente ')
+    else:
+        print ('-' * 60)
+        print (f'Levantamento do JOGADOR {dados[jogado]["nome"]}')
+        for i, v in enumerate(dados[jogado]['gols']):
+            print (f'No jogo {i+1}, fez {v} gols.')
+print ('<< Volte Sempre >>')
