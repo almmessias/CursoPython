@@ -21,3 +21,4 @@ while True:
     print ('-' * 30)
     if opc <= len(geral) - 1:
         print (f'As notas de {geral[opc][0]} são {geral[opc][1]}')
+print (geral)

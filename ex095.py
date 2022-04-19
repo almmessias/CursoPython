@@ -38,3 +38,4 @@ while True:
         for i, v in enumerate(dados[jogado]['gols']):
             print (f'No jogo {i+1}, fez {v} gols.')
 print ('<< Volte Sempre >>')
+print (dados)
