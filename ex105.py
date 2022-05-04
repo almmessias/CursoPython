@@ -1,4 +1,10 @@
 def notas(*num, sit=False):
+    '''
+    -> Função para analisar notas e a situação de vários alunos.
+    param num:uma ou mais notas dos alunos (aceita N notas).
+    param sit: valor opcional, indicando a situação do aluno.
+    return: dicionário com várias informações com as informações da turma.
+    '''
     soma = media = cont = maior = menor = 0
     tot = len(num)
     for c in num:
@@ -23,5 +29,5 @@ def notas(*num, sit=False):
     return dic
 
 
-resp = notas(7, 10, 8)
+resp = notas(7, 10, 8, 10, 1, 2, 2, sit=True)
 print (resp)

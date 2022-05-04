@@ -9,7 +9,7 @@ def LeiaInt(msg):
         else:
             print('Erro, digite um valor válido')
         if ok:
-            break
+           break
     return valor
     
 num = LeiaInt('Digite um número: ')
