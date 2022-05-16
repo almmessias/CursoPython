@@ -30,4 +30,4 @@ def desconto(num, tax, formato=False):
 
 
 def moeda(num, cifrao='R$'):
-    return f'{cifrao}{num:>.2f}'.replace('.',',')
+    return f'{cifrao}{num:>.2f}'.replace('.', ',')
