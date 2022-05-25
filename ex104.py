@@ -11,6 +11,7 @@ def LeiaInt(msg):
         if ok:
            break
     return valor
-    
+
+
 num = LeiaInt('Digite um número: ')
 print (f'Você digitou o número {num}')
