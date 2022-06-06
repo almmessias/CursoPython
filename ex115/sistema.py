@@ -9,10 +9,15 @@ if not arquivoExiste(arq):
 while True:
     resposta = menu(['Ver Pessoas Cadastradas', 'Cadastrar Nova Pessoa', 'Sair do sistema'])
     if resposta == 1:
+        # Opção 1 - Ver pessoas cadastradas
         #cabecalho('Ver Pessoas Cadastradas')
         lerArquivo(arq)
     elif resposta == 2:
+        # Cadastrar nova pessoa
         cabecalho('Cadastrar Nova Pessoa')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
         print('Saindo do sistema, até logo!')
         break
